@@ -136,6 +136,7 @@ Pada contoh diatas, kita hanya perlu mempassing `$post` karena Laravel sudah sec
 
 ## Langkah-langkah tutorial
 <a name="langkah-pertama"/>
+
 ### Langkah pertama - menambah kolom pada database user
 
 Buka file user migration yang terletak di directory `database\migrations` dan tambahkan satu kolom dengan nama **isAdmin** dengan tipe data boolean:
@@ -284,6 +285,7 @@ Route::get('/post/create', [PostController::class, 'create']);
 Route::get('/post/edit/{id}', [PostController::class, 'edit']);
 ```
 <a name="langkah-ketiga"/>
+
 ### Langkah ketiga - membuat gate
 
 Biasanya gates didefinisikan dalam method `boot` dari class `App\Providers\AuthServiceProvider` dengan menggunakan `Gate` facade. Pada gates, kita menggunakan method `define` untuk mendeklarasikan otorisasi baru yang menerima dua parameter. Parameter pertama adalah nama yang nantinya akan digunakan sebagai referensi untuk mengotorisasi user. Parameter kedua adalah closure. Pada closure, parameter pertama akan menerima user instance (defaultnya adalah user yang sedang login saat itu) dan dapat menerima argumen tambahan seperti model eloquent. 
@@ -520,6 +522,7 @@ Method controller dibawah ini akan dipetakan ke method policy yang sesuai. Ketik
 | destroy               | delete            |
 
 <a name="langkah-ketujuh"/>
+
 ### Langkah ketujuh - menggunakan policy dengan middleware
 
 Laravel mempunyai middleware yang dapat melakukan otorisasi aksi sebelum request sampai ke routes atau controllers. Tambahkan code dibawah ini pada route :

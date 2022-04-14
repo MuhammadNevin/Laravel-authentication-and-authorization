@@ -40,19 +40,19 @@ npm install && npm run dev
 
 berikut adalah tampilan halaman default laravel setelah menginstall Laravel Breeze. Akan ada opsi `login` dan `register` di kanan atas halaman.
 
-![authentication 1](/Laravel-authentication-and-authorization/img/authentication-1.png)
+![authentication 1](/img/authentication-1.png)
 
 berikut adalah tampilan `login`.
 
-![authentication 2](/Laravel-authentication-and-authorization/img/authentication-3.png)
+![authentication 2](/img/authentication-3.png)
 
 berikut adalah tampilan `register`.
 
-![authentication 2](/Laravel-authentication-and-authorization/img/authentication-4.png)
+![authentication 2](/img/authentication-4.png)
 
 berikut adalah tampilan `dashboard`.
 
-![authentication 2](/Laravel-authentication-and-authorization/img/authentication-5.png)
+![authentication 2](/img/authentication-5.png)
 
 
 #### Mengambil data user terautentikasi
@@ -228,7 +228,7 @@ Route::get('/profile', function() {
 
 Berikut adalah tampilan login menggunakan HTTP. Secara default, kolom `email` pada tabel `users` digunakan sebagai `username` di sini.
 
-![authentication 2](/Laravel-authentication-and-authorization/img/authentication-2.png)
+![authentication 2](/img/authentication-2.png)
 
 
 #### 3. Lainnya
@@ -372,7 +372,7 @@ Setelah user mengkonfirmasi passwordnya, aplikasi tidak akan meminta user untuk 
 ```
 berikut adalah tampilan halaman konfirmasi password.
 
-![authentication 6](/Laravel-authentication-and-authorization/img/authentication-6.png)
+![authentication 6](/img/authentication-6.png)
 
 ### Langkah keenam : Custom guards
 
